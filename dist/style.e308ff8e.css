@@ -51,6 +51,14 @@ body {
   box-sizing: border-box;
 }
 
+.breedPage {
+  width: 70px;
+  height: 20px;
+  box-sizing: border-box;
+  display: inline-block;
+  
+}
+
 h1 {
   font-weight: 500;
   margin: 0;

@@ -132,7 +132,7 @@ function showBreed(breeds) {
 
   var _loop = function _loop(breed) {
     //console.log(breed)
-    html += "<li><a href=http://localhost:53618/?breed=".concat(breed, ">").concat(breed, "</a></li>"); //console.log(breeds[breed].length)
+    html += "<li><a href=/breed?breed=".concat(breed, ">").concat(breed, "</a></li>"); //console.log(breeds[breed].length)
 
     var subBreeds = breeds[breed];
 
@@ -141,7 +141,7 @@ function showBreed(breeds) {
       console.log(subBreeds);
       html += "<ul>";
       subBreeds.forEach(function (subBreed) {
-        html += "<li><a href=\"http://localhost:53618/?breed=".concat(breed, "&subbreed=").concat(subBreed, "\"> ").concat(subBreed, " </a></li>");
+        html += "<li><a href=/breed?breed=".concat(breed, "&subbreed=").concat(subBreed, "> ").concat(subBreed, " </a></li>");
       });
       html += "</ul>";
     } else {
@@ -156,7 +156,7 @@ function showBreed(breeds) {
 
   card.innerHTML = "<ul> ".concat(html, " </ul>");
 }
-},{}],"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{}],"../../Users/leyda/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -184,7 +184,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58807" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56201" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -359,5 +359,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
+},{}]},{},["../../Users/leyda/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
 //# sourceMappingURL=/dogs.e31bb0bc.js.map
